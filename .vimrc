@@ -17,7 +17,7 @@ set nocompatible                "cp:    turns off strct vi compatibility
 set scrolloff=5                 "so:    places a line between the current line and the screen edge
 set showmatch                   "sm:    flashes matching brackets or parentheses
 set matchtime=10				"		how many tenths of a second to blink matching brackets for
-set autochdir					"		Change to the directory of the current file
+" set autochdir					"		Change to the directory of the current file
 set ignorecase                  "ic:    ignores case when pattern matching
 set incsearch                   "is:    automatically begins searching as you type
 set hlsearch                    "hls:   highlights search results
@@ -111,3 +111,5 @@ vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR
 " TYPO3 abbreviations
 ab t3d t3lib_div::debug(
 
+ab l1	$L_1$
+ab l2	$L_2$
